@@ -39,7 +39,7 @@ def scrap_etenders(link='https://etenders.gov.in/eprocure/app'):
 
 
 
-def cpppc_scraper(link='https://www.cpppc.org/en/PPPyd.jhtml'): #China Public Private Partnerships Center
+def cpppc_scraper(link='https://www.cpppc.org/en/PPPyd.jhtml'):
     link_to_scrape = requests.get(link).text
     soup = BeautifulSoup(link_to_scrape, 'html.parser')
     title = []
